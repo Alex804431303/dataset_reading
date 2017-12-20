@@ -1,0 +1,2 @@
+sensor_msgs/Image datasetImage
+float64 timeStamp

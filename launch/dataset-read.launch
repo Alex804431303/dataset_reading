@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- launch node -->
+  <node pkg="dataset_image_read" type="dataset_image_read_node" name="dataset_image_read_node" output="screen">
+    <!--dataset_image_read camera image topic name -->
+    <param name="image_publishName" type="string" value="dataset/img_tim_info" />
+    <param name="dataset_name" type="string" value="kitti" />
+    <param name="datasetPath_names" type="string" value="/home/alex/data/kitti/dataset/sequences/00/" />
+  </node>
+  
+   <!-- rplidar launch node -->
+  <!--include file="$(find rplidar_ros)/launch/rplidar.launch"/-->
+</launch>
